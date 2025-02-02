@@ -18,7 +18,7 @@ pipeline {
             }
         }
         
-        stage('Create Docker Image') {
+        /*stage('Create Docker Image') {
             steps {
                 sh 'docker build -t aseem1 .'
             }
@@ -43,6 +43,6 @@ pipeline {
             steps {
                 sh 'docker run -d -p 9000:8080 --name aseem_container -t aseem1'
             }
-        }
+        }*/
     }
 }
